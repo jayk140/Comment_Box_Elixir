@@ -1,50 +1,27 @@
 <div class="col-md-6 offset-md-1" style="margin-top:2em;">
-  <h1 style="margin-bottom:1em;"> Please enter your name below: </h1>
+
+<h1 style="margin-bottom:1em;"> Please enter your name below to connect: </h1>
   <div>
     <form>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="name" placeholder="Name">
-      </fieldset>
-      <button type="button" class="btn btn-lg btn-success" id="submit">Submit</button>
-    </form> 
+    <fieldset class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Name">
+    </fieldset>
+    <button type="button" class="btn btn-lg btn-success" id="connectToChat">Submit</button>
+  </form>
   </div>
 
   <h1 style="margin-bottom:1em;"> Comment Box </h1>
     <div>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <span class="title"> 
-            <a href="#"> Roger H. </a> <time> 2:00 PM</time> 
-              <p>How's everyone doing?</p>
-          </span>
-        </li>
-        <li class="list-group-item">
-          <span class="title"> 
-          <a href="#"> Mike </a> <time> 5:15 PM</time> 
-            <p> Doing good! The holidays are here! </p>
-          </span>
-        </li>   
-        <li class="list-group-item">
-          <span class="title"> 
-            <a href="#">Pete </a> <time> 5:30 PM</time> 
-              <p> What's everyone doing for the holiday? </p>
-          </span>
-        </li>
-        <li class="list-group-item">
-          <span class="title">
-            <a href="#"> Sara </a> <time> 6:00 PM</time> 
-            <p> Spending time with friends and family! </p>
-          </span>
-        </li>
-      </ul> 
-      <form>
-        <fieldset class="form-group">
-          <input type="text" class="form-control" id="comment" placeholder="Add a comment">
-        </fieldset>
-        <button type="button" class="btn btn-lg btn-success" id="post">Post</button>
-      </form> 
+      <ul id="CommentList" class="list-unstyled"></ul>
+      <fieldset class="form-group">
+      <input type="text" class="form-control" id="NewComment" placeholder="Add a comment">
+      </fieldset>
+      <button type="button" class="btn btn-lg btn-success" id="post">Post</button>
     </div>
 </div>
+
 <div class="col-md-4 offset-md-1" style="margin-top:2em;">
   <h1 style="margin-bottom:1em;"> Online users: </h1>
+    <ul id="UserList" class="list-unstyled">
+    </ul>
 </div>
