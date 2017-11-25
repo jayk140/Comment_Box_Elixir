@@ -1,13 +1,16 @@
 <div class="col-md-6 offset-md-1" style="margin-top:2em;">
-
-<h1 style="margin-bottom:1em;"> Please enter your name below to connect: </h1>
-  <div>
+  <div id="ConnectDiv">
+    <h1 style="margin-bottom:1em;"> Please enter your name below to connect: </h1>
     <form>
     <fieldset class="form-group">
       <input type="text" class="form-control" id="name" placeholder="Name">
     </fieldset>
     <button type="button" class="btn btn-lg btn-success" id="connectToChat">Submit</button>
   </form>
+  </div>
+
+  <div id="SuccessDiv">
+    <h1 style="margin-bottom:1em;"> Thanks for connecting! </h1>
   </div>
 
   <h1 style="margin-bottom:1em;"> Comment Box </h1>

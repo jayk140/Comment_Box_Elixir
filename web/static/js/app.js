@@ -15,11 +15,16 @@ import "phoenix_html"
 import {Socket, Presence} from "phoenix"
 
 var connectToChat = document.getElementById("connectToChat");
+let successDiv = document.getElementById("SuccessDiv").hidden = true;
 
 function connect(){
     let user = document.getElementById("name").value;
 
     if (user){
+
+        let successDiv = document.getElementById("SuccessDiv").hidden = false;
+        let connectDiv = document.getElementById("ConnectDiv").hidden = true;
+
         let socket = new Socket("/socket", {params: {user: user}})
         socket.connect()
 
@@ -68,6 +73,12 @@ function connect(){
             commentInput.value = ""
           }
         })
+
+        let postButton = document.getElementById("post");
+        postButton.addEventListener("click", function() {
+            room.push("message:new", commentInput.value)
+            commentInput.value = ""
+        });
 
         let commentList = document.getElementById("CommentList")
         let renderMessage = (message) => {
