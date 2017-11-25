@@ -1,36 +1,50 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+<div class="col-md-6 offset-md-1" style="margin-top:2em;">
+  <h1 style="margin-bottom:1em;"> Please enter your name below: </h1>
+  <div>
+    <form>
+      <fieldset class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </fieldset>
+      <button type="button" class="btn btn-lg btn-success" id="submit">Submit</button>
+    </form> 
+  </div>
+
+  <h1 style="margin-bottom:1em;"> Comment Box </h1>
+    <div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="title"> 
+            <a href="#"> Roger H. </a> <time> 2:00 PM</time> 
+              <p>How's everyone doing?</p>
+          </span>
+        </li>
+        <li class="list-group-item">
+          <span class="title"> 
+          <a href="#"> Mike </a> <time> 5:15 PM</time> 
+            <p> Doing good! The holidays are here! </p>
+          </span>
+        </li>   
+        <li class="list-group-item">
+          <span class="title"> 
+            <a href="#">Pete </a> <time> 5:30 PM</time> 
+              <p> What's everyone doing for the holiday? </p>
+          </span>
+        </li>
+        <li class="list-group-item">
+          <span class="title">
+            <a href="#"> Sara </a> <time> 6:00 PM</time> 
+            <p> Spending time with friends and family! </p>
+          </span>
+        </li>
+      </ul> 
+      <form>
+        <fieldset class="form-group">
+          <input type="text" class="form-control" id="comment" placeholder="Add a comment">
+        </fieldset>
+        <button type="button" class="btn btn-lg btn-success" id="post">Post</button>
+      </form> 
+    </div>
 </div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
+<div class="col-md-4 offset-md-1" style="margin-top:2em;">
+  <h1 style="margin-bottom:1em;"> Online users: </h1>
 </div>
