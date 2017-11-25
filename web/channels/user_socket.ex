@@ -2,7 +2,7 @@ defmodule CommentBoxElixir.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", CommentBoxElixir.RoomChannel
+  channel "room:*", CommentBoxElixir.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
